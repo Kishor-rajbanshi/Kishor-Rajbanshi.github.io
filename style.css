@@ -1,0 +1,78 @@
+/* style.css */
+
+/* Customize styles to resemble GitHub */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+}
+
+.profile-sidebar {
+    background-color: #f6f8fa;
+    /* GitHub sidebar background color */
+    padding: 20px;
+    width: 30%;
+    /* Adjust the width as needed */
+}
+
+.profile-image {
+    border-radius: 50%;
+    max-width: 150px;
+    /* Increase the image size */
+    margin: 0 auto;
+    display: block;
+}
+
+.profile-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.profile-details h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-details p {
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.profile-followers {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.markdown-container {
+    border: 1px solid #e1e4e8;
+    /* GitHub border color */
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    /* GitHub box shadow */
+    width: 70%;
+    /* Adjust the width as needed */
+    padding: 20px;
+}
+
+.markdown-body {
+    box-sizing: border-box;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+/* Media query for responsive layout */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .profile-sidebar {
+        width: 100%;
+    }
+
+    .markdown-container {
+        width: 100%;
+    }
+}
